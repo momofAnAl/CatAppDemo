@@ -7,5 +7,6 @@ app.use(cors());
 
 app.use(express.static(`${__dirname}/public`));
 
+//Routes
 app.get('/api/cat', (req, res) => res.send('Smelly cat'));
-app.listen(PORT, console.log(`Listening on port: ${PORT}`));
+app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
